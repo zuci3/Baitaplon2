@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautyGlow - Chất lượng thật - Giá trị thật</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+         :root {
+            --primary-color: #2e8b57;
+            --secondary-color: #e94e65;
+            --light-bg: #f8f9fa;
+            --dark-bg: #212529;
+            --text-light: #f8f9fa;
+            --text-dark: #212529;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Header styles */
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 0;
+        }
+        
+        .top-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        
+        .logo-text span {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+        
+        .quick-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .quick-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        
+        .quick-links a:hover {
+            color: #f0f0f0;
+            text-decoration: underline;
+        }
+        
+        .search-bar {
+            flex-grow: 1;
+            max-width: 600px;
+            margin: 0 20px;
+            display: flex;
+        }
+        
+        .search-bar input {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            width: 100%;
+            outline: none;
+        }
+        
+        .search-bar button {
+            background: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        
+        .search-bar button:hover {
+            background: #f0f0f0;
+        }
+        
+        .user-actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .user-actions a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.3s;
+        }
+        
+        .user-actions a:hover {
+            color: #f0f0f0;
+        }
+        
+        .cart {
+            position: relative;
+        }
+        
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: var(--secondary-color);
+            color: white;
+            font-size: 10px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Navigation styles */
+        
+        nav {
+            background-color: #e94e65;
+            color: white;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .main-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .main-menu li {
+            position: relative;
+        }
+        
+        .main-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        .main-menu a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        /* Sidebar styles */
+        
+        .sidebar {
+            width: 250px;
+            background-color: #f8f9fa;
+            border-right: 1px solid #dee2e6;
+        }
+        
+        .sidebar-menu {
+            list-style: none;
+        }
+        
+        .sidebar-menu li {
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .sidebar-menu a {
+            padding: 12px 20px;
+            display: block;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .sidebar-menu a:hover {
+            background-color: #e9ecef;
+        }
+        /* Main content styles */
+        
+        .main-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        /* Carousel styles */
+        
+        .carousel {
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .carousel-inner {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+        
+        .carousel-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .carousel-item.active {
+            opacity: 1;
+        }
+        
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        
+        .carousel-control:hover {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .carousel-control.prev {
+            left: 10px;
+        }
+        
+        .carousel-control.next {
+            right: 10px;
+        }
+        
+        .carousel-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        /* Product section styles */
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #ffebee;
+            padding: 10px;
+            border-left: 5px solid var(--secondary-color);
+        }
+        
+        .section-title i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+        
+        .section-title h2 {
+            margin: 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: var(--secondary-color);
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .product-card {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-image {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        
+        .discount-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .product-info {
+            padding: 15px;
+        }
+        
+        .product-brand {
+            font-size: 12px;
+            color: #6c757d;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        
+        .product-name {
+            font-size: 14px;
+            margin-bottom: 10px;
+            height: 40px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        
+        .product-rating {
+            color: #ffc107;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .product-price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .current-price {
+            font-weight: bold;
+            color: var(--secondary-color);
+            font-size: 16px;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .discount-percent {
+            background-color: #e9ecef;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 12px;
+            color: var(--secondary-color);
+        }
+        
+        .add-to-cart {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .add-to-cart:hover {
+            background-color: #276b49;
+        }
+        /* Blog section styles */
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .blog-card {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .blog-card:hover .blog-image img {
+            transform: scale(1.05);
+        }
+        
+        .blog-info {
+            padding: 15px;
+        }
+        
+        .blog-date {
+            font-size: 12px;
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
+        
+        .blog-title {
+            font-size: 16px;
+            margin-bottom: 10px;
+            height: 40px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        
+        .blog-excerpt {
+            font-size: 14px;
+            color: #6c757d;
+            margin-bottom: 10px;
+            height: 60px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+        
+        .read-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+        
+        .read-more:hover {
+            color: #276b49;
+            text-decoration: underline;
+        }
+        /* Feature icons */
+        
+        .feature-icons {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto 30px;
+            padding: 0 20px;
+        }
+        
+        .feature-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #f8f9fa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            font-size: 24px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .feature-item:hover .feature-icon {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .feature-text {
+            font-size: 12px;
+            color: #333;
+        }
+        /* Footer styles */
+        
+        footer {
+            background-color: #212529;
+            color: white;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+        
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--secondary-color);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #343a40;
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #343a40;
+            color: #adb5bd;
+            font-size: 14px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        /* Modal styles */
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal.show {
+            display: flex;
+        }
+        
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+            animation: modalFadeIn 0.3s ease;
+        }
+        
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 10px;
+        }
+        
+        .modal-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #6c757d;
+            transition: color 0.3s;
+        }
+        
+        .modal-close:hover {
+            color: var(--secondary-color);
+        }
+        
+        .modal-body {
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #495057;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            border-top: 1px solid #e9ecef;
+            padding-top: 15px;
+        }
+        
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #276b49;
+        }
+        
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+        
+        .form-footer {
+            text-align: center;
+            margin-top: 15px;
+            color: #495057;
+        }
+        
+        .form-footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .form-footer a:hover {
+            color: #276b49;
+            text-decoration: underline;
+        }
+        /* Responsive styles */
+        
+        @media (max-width: 992px) {
+            .top-header {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .logo {
+                margin-bottom: 10px;
+            }
+            .search-bar {
+                width: 100%;
+                margin: 10px 0;
+            }
+            .quick-links,
+            .user-actions {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 10px 0;
+            }
+            .main-menu {
+                flex-wrap: wrap;
+            }
+            .main-content {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #dee2e6;
+            }
+            .feature-icons {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .product-grid,
+            .blog-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+            .carousel {
+                height: 300px;
+            }
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* Notification styles */
+        
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 2000;
+            transform: translateX(150%);
+            transition: transform 0.5s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .notification.show {
+            transform: translateX(0);
+        }
+        
+        .notification-error {
+            background-color: #f44336;
+        }
+        
+        .notification-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 0;
+            margin-left: 10px;
+        }
+        
+        .cart-modal {
+            max-width: 800px;
+            width: 90%;
+        }
+        
+        .cart-items {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .cart-item-image {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+        
+        .cart-item-info {
+            flex-grow: 1;
+        }
+        
+        .cart-item-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .cart-item-price {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        .cart-item-quantity {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+        
+        .cart-item-quantity button {
+            width: 25px;
+            height: 25px;
+            border: 1px solid #ddd;
+            background: #f8f9fa;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .cart-item-quantity input {
+            width: 40px;
+            text-align: center;
+            margin: 0 5px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .cart-summary {
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #eee;
+        }
+        
+        .cart-total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .cart-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .empty-cart {
+            text-align: center;
+            padding: 40px;
+            color: #6c757d;
+        }
+        
+        .empty-cart i {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: #ddd;
+        }
+        
+        .remove-item {
+            color: #e94e65;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 5px;
+            display: inline-block;
+        }
+        
+        .remove-item:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i>
+        <span id="notification-message">Thông báo</span>
+        <button class="notification-close" onclick="closeNotification()">×</button>
+    </div>
+
+    <!-- Login and Register Modals -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Đăng nhập</h3>
+                <button class="modal-close" onclick="closeModal('loginModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Mật khẩu</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <a href="#" onclick="showModal('forgotPasswordModal'); closeModal('loginModal')">Quên mật khẩu?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('loginModal')">Đóng</button>
+                <button class="btn btn-primary" onclick="handleLogin()">Đăng nhập</button>
+            </div>
+            <div class="form-footer">
+                <p>Chưa có tài khoản? <a href="#" onclick="showModal('registerModal'); closeModal('loginModal')">Đăng ký ngay</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Đăng ký</h3>
+                <button class="modal-close" onclick="closeModal('registerModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="registerName">Họ và tên</label>
+                        <input type="text" id="registerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPhone">Số điện thoại</label>
+                        <input type="tel" id="registerPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Mật khẩu</label>
+                        <input type="password" id="registerPassword" required minlength="6">
+                    </div>
+                    <div class="form-group">
+                        <label for="registerConfirmPassword">Xác nhận mật khẩu</label>
+                        <input type="password" id="registerConfirmPassword" required minlength="6">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('registerModal')">Đóng</button>
+                <button class="btn btn-primary" onclick="handleRegister()">Đăng ký</button>
+            </div>
+            <div class="form-footer">
+                <p>Đã có tài khoản? <a href="#" onclick="showModal('loginModal'); closeModal('registerModal')">Đăng nhập</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="forgotPasswordModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Quên mật khẩu</h3>
+                <button class="modal-close" onclick="closeModal('forgotPasswordModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="forgotPasswordForm">
+                    <div class="form-group">
+                        <label for="forgotEmail">Email</label>
+                        <input type="email" id="forgotEmail" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('forgotPasswordModal')">Đóng</button>
+                <button class="btn btn-primary" onclick="handleForgotPassword()">Gửi yêu cầu</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="cartModal">
+        <div class="modal-content cart-modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Giỏ hàng của bạn</h3>
+                <button class="modal-close" onclick="closeModal('cartModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cartItemsContainer">
+                    <!-- Nội dung giỏ hàng sẽ được thêm bằng JavaScript -->
+                </div>
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span>Tổng cộng:</span>
+                        <span id="cartTotal">0 ₫</span>
+                    </div>
+                    <div class="cart-actions">
+                        <button class="btn btn-secondary" onclick="closeModal('cartModal')">Tiếp tục mua sắm</button>
+                        <button class="btn btn-primary" onclick="checkout()">Thanh toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="modal" id="productDetailModal">
+        <div class="modal-content" style="max-width: 800px;">
+            <div class="modal-header">
+                <h3 class="modal-title" id="productDetailTitle">Chi tiết sản phẩm</h3>
+                <button class="modal-close" onclick="closeModal('productDetailModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <img id="productDetailImage" src="/api/placeholder/400/400" alt="Product" style="width: 100%; border-radius: 5px;">
+                    </div>
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3 id="productDetailName" style="margin-bottom: 10px; color: var(--primary-color);"></h3>
+                        <div id="productDetailRating" class="product-rating" style="margin-bottom: 15px;"></div>
+                        <div id="productDetailBrand" class="product-brand" style="margin-bottom: 10px;"></div>
+                        <div id="productDetailPrice" class="product-price" style="margin-bottom: 15px;"></div>
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="margin-bottom: 10px;">Mô tả sản phẩm</h4>
+                            <p id="productDetailDescription" style="font-size: 14px; line-height: 1.6;"></p>
+                        </div>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <label for="productQuantity" style="font-weight: bold;">Số lượng:</label>
+                            <input type="number" id="productQuantity" min="1" value="1" style="width: 60px; padding: 5px; border: 1px solid #dee2e6; border-radius: 4px;">
+                            <button class="btn btn-primary" onclick="addToCartFromModal()" style="flex-grow: 1;">
+                                <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="top-header">
+            <div class="logo" onclick="window.location.href='/'">
+                <img src="../img/download.jfif" alt="BeautyGlow Logo">
+                <div class="logo-text">
+                    <h1>BeautyGlow</h1>
+                    <span>Chất lượng thật - Giá trị thật</span>
+                </div>
+            </div>
+
+            <div class="quick-links">
+                <a href="#">Trang chủ</a>
+                <a href="#">Giới thiệu</a>
+                <a href="#">Khuyến mãi</a>
+                <a href="#">Tin tức</a>
+                <a href="#">Liên hệ</a>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="user-actions">
+                <a href="#" onclick="showModal('loginModal')">
+                    <i class="fas fa-user"></i>
+                    <span>Đăng nhập</span>
+                </a>
+                <a href="#" class="cart" onclick="showCart()">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Giỏ hàng</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <ul class="main-menu">
+                <li><a href="#"><i class="fas fa-home"></i> Trang chủ</a></li>
+                <li><a href="#"><i class="fas fa-spa"></i> Chăm sóc da</a></li>
+                <li><a href="#"><i class="fas fa-paint-brush"></i> Trang điểm</a></li>
+                <li><a href="#"><i class="fas fa-air-freshener"></i> Nước hoa</a></li>
+                <li><a href="#"><i class="fas fa-cut"></i> Chăm sóc tóc</a></li>
+                <li><a href="#"><i class="fas fa-bath"></i> Cơ thể</a></li>
+                <li><a href="#"><i class="fas fa-percentage"></i> Khuyến mãi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="#"><i class="fas fa-bolt"></i> Sản phẩm mới</a></li>
+                <li><a href="#"><i class="fas fa-fire"></i> Bán chạy</a></li>
+                <li><a href="#"><i class="fas fa-star"></i> Thương hiệu</a></li>
+                <li><a href="#"><i class="fas fa-gem"></i> Cao cấp</a></li>
+                <li><a href="#"><i class="fas fa-leaf"></i> Thiên nhiên</a></li>
+                <li><a href="#"><i class="fas fa-baby"></i> Cho da nhạy cảm</a></li>
+                <li><a href="#"><i class="fas fa-sun"></i> Chống nắng</a></li>
+                <li><a href="#"><i class="fas fa-moon"></i> Chăm sóc ban đêm</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <!-- Carousel -->
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/download (1).jfif" alt="Slider 1" class="carousel-img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/images.jfif" alt="Slider 2" class="carousel-img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/images (1).jfif" alt="Slider 3" class="carousel-img">
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="prevSlide()">❮</button>
+                <button class="carousel-control next" onclick="nextSlide()">❯</button>
+            </div>
+
+            <!-- Feature Icons -->
+            <div class="feature-icons">
+                <div class="feature-item" onclick="showNotification('Miễn phí vận chuyển cho đơn hàng từ 500.000đ')">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <span class="feature-text">Miễn phí vận chuyển</span>
+                </div>
+                <div class="feature-item" onclick="showNotification('Quà tặng hấp dẫn cho khách hàng thân thiết')">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <span class="feature-text">Quà tặng hấp dẫn</span>
+                </div>
+                <div class="feature-item" onclick="showNotification('Tất cả sản phẩm đều được bảo hành chính hãng')">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <span class="feature-text">Bảo hành chính hãng</span>
+                </div>
+                <div class="feature-item" onclick="showNotification('Đội ngũ hỗ trợ luôn sẵn sàng 24/7')">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <span class="feature-text">Hỗ trợ 24/7</span>
+                </div>
+                <div class="feature-item" onclick="showNotification('Đổi trả trong vòng 7 ngày nếu không hài lòng')">
+                    <div class="feature-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <span class="feature-text">Đổi trả dễ dàng</span>
+                </div>
+            </div>
+
+            <!-- New Products Section -->
+            <div class="section-title">
+                <i class="fas fa-bolt"></i>
+                <h2>Sản phẩm mới</h2>
+            </div>
+            <div class="product-grid" id="newProducts">
+                <!-- Product cards will be added by JavaScript -->
+            </div>
+
+            <!-- Best Selling Section -->
+            <div class="section-title">
+                <i class="fas fa-fire"></i>
+                <h2>Bán chạy nhất</h2>
+            </div>
+            <div class="product-grid" id="bestSellingProducts">
+                <!-- Product cards will be added by JavaScript -->
+            </div>
+
+            <!-- Blog Section -->
+            <div class="section-title">
+                <i class="fas fa-newspaper"></i>
+                <h2>Bài viết mới</h2>
+            </div>
+            <div class="blog-grid" id="blogPosts">
+                <!-- Blog cards will be added by JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Về BeautyGlow</h3>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Quy chế hoạt động</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Hỗ trợ khách hàng</h3>
+                <ul>
+                    <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    <li><a href="#">Phương thức thanh toán</a></li>
+                    <li><a href="#">Chính sách vận chuyển</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Liên hệ</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
+                    <li><i class="fas fa-phone"></i> 1900 1234</li>
+                    <li><i class="fas fa-envelope"></i> info@beautyglow.vn</li>
+                    <li><i class="fas fa-clock"></i> 8:00 - 21:00 (T2 - CN)</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Đăng ký nhận tin</h3>
+                <p>Nhận thông tin khuyến mãi và cập nhật sản phẩm mới nhất từ BeautyGlow</p>
+                <form id="newsletterForm" style="margin-top: 15px;">
+                    <input type="email" placeholder="Nhập email của bạn" required style="width: 100%; padding: 10px; border: none; border-radius: 4px; margin-bottom: 10px;">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 BeautyGlow. Tất cả các quyền được bảo lưu.</p>
+            <div class="footer-links">
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Global variables
+        let currentUser = null;
+        let cartItems = [];
+        let currentSlide = 0;
+        let slides = document.querySelectorAll('.carousel-item');
+        let products = [];
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load sample products
+            loadProducts();
+            // Load sample blog posts
+            loadBlogPosts();
+            // Start carousel
+            startCarousel();
+            // Check if user is logged in
+            checkLoginStatus();
+            // Load cart from localStorage
+            loadCart();
+            // Setup newsletter form
+            setupNewsletterForm();
+        });
+
+        // Modal functions
+        function showModal(modalId) {
+            document.getElementById(modalId).classList.add('show');
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('show');
+        }
+
+        function closeNotification() {
+            document.getElementById('notification').classList.remove('show');
+        }
+
+        function showNotification(message, isError = false) {
+            const notification = document.getElementById('notification');
+            const notificationMessage = document.getElementById('notification-message');
+
+            notificationMessage.textContent = message;
+            notification.className = 'notification';
+            notification.classList.add(isError ? 'notification-error' : 'notification');
+            notification.classList.add('show');
+
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 5000);
+        }
+
+        // Authentication functions
+        function handleLogin() {
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            // Simple validation
+            if (!email || !password) {
+                showNotification('Vui lòng nhập đầy đủ thông tin', true);
+                return;
+            }
+
+            // Check if email is valid
+            if (!validateEmail(email)) {
+                showNotification('Email không hợp lệ', true);
+                return;
+            }
+
+            // Mock login - in a real app, this would be an API call
+            currentUser = {
+                id: 1,
+                name: "Trần Tuấn Anh",
+                email: email
+            };
+
+            // Save user to localStorage
+            localStorage.setItem('currentUser', JSON.stringify(currentUser));
+
+            showNotification('Đăng nhập thành công!');
+            closeModal('loginModal');
+            updateUserStatus();
+        }
+
+        function handleRegister() {
+            const name = document.getElementById('registerName').value;
+            const email = document.getElementById('registerEmail').value;
+            const phone = document.getElementById('registerPhone').value;
+            const password = document.getElementById('registerPassword').value;
+            const confirmPassword = document.getElementById('registerConfirmPassword').value;
+
+            // Simple validation
+            if (!name || !email || !phone || !password || !confirmPassword) {
+                showNotification('Vui lòng nhập đầy đủ thông tin', true);
+                return;
+            }
+
+            // Check if email is valid
+            if (!validateEmail(email)) {
+                showNotification('Email không hợp lệ', true);
+                return;
+            }
+
+            // Check if phone is valid
+            if (!validatePhone(phone)) {
+                showNotification('Số điện thoại không hợp lệ', true);
+                return;
+            }
+
+            if (password.length < 6) {
+                showNotification('Mật khẩu phải có ít nhất 6 ký tự', true);
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                showNotification('Mật khẩu không khớp', true);
+                return;
+            }
+
+            // Mock registration - in a real app, this would be an API call
+            showNotification('Đăng ký thành công! Vui lòng đăng nhập.');
+            closeModal('registerModal');
+        }
+
+        function handleForgotPassword() {
+            const email = document.getElementById('forgotEmail').value;
+
+            if (!email) {
+                showNotification('Vui lòng nhập email', true);
+                return;
+            }
+
+            if (!validateEmail(email)) {
+                showNotification('Email không hợp lệ', true);
+                return;
+            }
+
+            // Mock forgot password - in a real app, this would be an API call
+            showNotification('Yêu cầu đặt lại mật khẩu đã được gửi đến email của bạn');
+            closeModal('forgotPasswordModal');
+        }
+
+        function checkLoginStatus() {
+            // Check localStorage for user data
+            const userData = localStorage.getItem('currentUser');
+            if (userData) {
+                currentUser = JSON.parse(userData);
+            }
+            updateUserStatus();
+        }
+
+        function updateUserStatus() {
+            const userActions = document.querySelector('.user-actions');
+
+            if (currentUser) {
+                userActions.innerHTML = `
+                    <a href="#" onclick="logout()">
+                        <i class="fas fa-user"></i>
+                        <span>${currentUser.name}</span>
+                    </a>
+                    <a href="#" class="cart" onclick="showCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Giỏ hàng</span>
+                        <span class="cart-count" id="cartCount">${cartItems.reduce((total, item) => total + item.quantity, 0)}</span>
+                    </a>
+                `;
+            } else {
+                userActions.innerHTML = `
+                    <a href="#" onclick="showModal('loginModal')">
+                        <i class="fas fa-user"></i>
+                        <span>Đăng nhập</span>
+                    </a>
+                    <a href="#" class="cart" onclick="showCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Giỏ hàng</span>
+                        <span class="cart-count" id="cartCount">${cartItems.reduce((total, item) => total + item.quantity, 0)}</span>
+                    </a>
+                `;
+            }
+        }
+
+        function logout() {
+            currentUser = null;
+            localStorage.removeItem('currentUser');
+            showNotification('Đã đăng xuất');
+            updateUserStatus();
+        }
+
+        // Validation functions
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        function validatePhone(phone) {
+            const re = /^[0-9]{10,11}$/;
+            return re.test(phone);
+        }
+
+        // Product functions
+        function loadProducts() {
+            // Mock products data
+            products = [{
+                id: 1,
+                name: 'Kem dưỡng ẩm cho da khô',
+                brand: 'La Roche-Posay',
+                price: 350000,
+                originalPrice: 420000,
+                image: 'laroche.jfif',
+                rating: 4,
+                description: 'Kem dưỡng ẩm chuyên sâu cho da khô, cung cấp độ ẩm 24h, làm mềm mịn da. Thành phần chứa Glycerin và Niacinamide giúp phục hồi hàng rào bảo vệ da, ngăn ngừa mất nước. Kết cấu kem mỏng nhẹ, thẩm thấu nhanh, không gây bết dính. Phù hợp sử dụng hàng ngày cho da khô, da thiếu nước.'
+            }, {
+                id: 2,
+                name: 'Serum vitamin C sáng da',
+                brand: 'The Ordinary',
+                price: 450000,
+                originalPrice: 550000,
+                image: 'serum.png',
+                rating: 5,
+                description: 'Serum chứa 23% vitamin C nguyên chất, giúp làm sáng da, mờ thâm nám. Công thức độc đáo với L-Ascorbic Acid tinh khiết kết hợp với Hyaluronic Acid giúp cấp ẩm và làm đều màu da. Sử dụng đều đặn giúp da sáng khỏe, giảm nếp nhăn và vết thâm do mụn. Lưu ý sử dụng kem chống nắng ban ngày khi dùng sản phẩm này.'
+            }, {
+                id: 3,
+                name: 'Sữa rửa mặt dịu nhẹ',
+                brand: 'CeraVe',
+                price: 250000,
+                originalPrice: 300000,
+                image: 'cerave.png',
+                rating: 4,
+                description: 'Sữa rửa mặt dịu nhẹ không chứa xà phòng, phù hợp cho mọi loại da. Công thức với Ceramides giúp duy trì hàng rào bảo vệ da tự nhiên, không gây khô căng sau khi rửa. Sản phẩm không chứa hương liệu, không gây kích ứng, được các bác sĩ da liễu khuyên dùng.'
+            }, {
+                id: 4,
+                name: 'Kem chống nắng SPF 50+',
+                brand: 'Anessa',
+                price: 520000,
+                originalPrice: 600000,
+                image: 'kemchongnang.png',
+                rating: 5,
+                description: 'Kem chống nắng vật lý, kiềm dầu, bảo vệ da toàn diện khỏi tia UV. Công thức chống nước, chống mồ hôi, phù hợp cho hoạt động ngoài trời. Chứa thành phần dưỡng da giúp da không bị khô khi sử dụng. Kết cấu mỏng nhẹ, không gây bết dính, không vệt trắng.'
+            }, {
+                id: 5,
+                name: 'Tẩy trang dạng dầu',
+                brand: 'Bioderma',
+                price: 320000,
+                originalPrice: 380000,
+                image: 'taytrang.png',
+                rating: 4,
+                description: 'Dầu tẩy trang dịu nhẹ, làm sạch sâu mà không gây khô da. Công thức không chứa xà phòng, phù hợp với mọi loại da kể cả da nhạy cảm. Làm sạch hiệu quả lớp trang điểm, bụi bẩn và bã nhờn mà không làm tổn thương da. Có thể sử dụng cho vùng mắt và môi.'
+            }, {
+                id: 6,
+                name: 'Mặt nạ ngủ dưỡng ẩm',
+                brand: 'Laneige',
+                price: 480000,
+                originalPrice: 550000,
+                image: 'matnaduognam.png',
+                rating: 5,
+                description: 'Mặt nạ ngủ cấp ẩm ban đêm, giúp da sáng mịn khi thức dậy. Công thức với chiết xuất từ quả mơ và công nghệ Sleep-Tox giúp phục hồi da trong khi ngủ. Kết cấu gel mỏng nhẹ, thẩm thấu nhanh, không gây bết dính. Sử dụng 2-3 lần/tuần để có làn da căng mịn, đầy sức sống.'
+            }];
+
+            const bestSellingProducts = [...products].sort(() => 0.5 - Math.random());
+
+            // Render new products
+            const newProductsContainer = document.getElementById('newProducts');
+            newProductsContainer.innerHTML = products.map(product => createProductCard(product)).join('');
+
+            // Render best selling products
+            const bestSellingContainer = document.getElementById('bestSellingProducts');
+            bestSellingContainer.innerHTML = bestSellingProducts.map(product => createProductCard(product)).join('');
+        }
+
+        function createProductCard(product) {
+            const discountPercent = Math.round((1 - product.price / product.originalPrice) * 100);
+
+            return `
+                <div class="product-card" onclick="showProductDetail(${product.id})">
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${product.name}">
+                        <span class="discount-badge">-${discountPercent}%</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">${product.brand}</div>
+                        <div class="product-name">${product.name}</div>
+                        <div class="product-rating">
+                            ${'★'.repeat(product.rating)}${'☆'.repeat(5 - product.rating)}
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">${formatPrice(product.price)}</span>
+                            <span class="original-price">${formatPrice(product.originalPrice)}</span>
+                            <span class="discount-percent">-${discountPercent}%</span>
+                        </div>
+                        <button class="add-to-cart" onclick="event.stopPropagation(); addToCart(${product.id})">
+                            <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function showProductDetail(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            const discountPercent = Math.round((1 - product.price / product.originalPrice) * 100);
+
+            document.getElementById('productDetailTitle').textContent = product.name;
+            document.getElementById('productDetailImage').src = product.image;
+            document.getElementById('productDetailImage').alt = product.name;
+            document.getElementById('productDetailName').textContent = product.name;
+            document.getElementById('productDetailBrand').textContent = product.brand;
+            document.getElementById('productDetailRating').innerHTML = '★'.repeat(product.rating) + '☆'.repeat(5 - product.rating);
+            document.getElementById('productDetailPrice').innerHTML = `
+                <span class="current-price">${formatPrice(product.price)}</span>
+                <span class="original-price">${formatPrice(product.originalPrice)}</span>
+                <span class="discount-percent">-${discountPercent}%</span>
+            `;
+            document.getElementById('productDetailDescription').textContent = product.description;
+
+            showModal('productDetailModal');
+        }
+
+        // Cart functions
+        function loadCart() {
+            const savedCart = localStorage.getItem('cartItems');
+            if (savedCart) {
+                cartItems = JSON.parse(savedCart);
+                updateCartCount();
+            }
+        }
+
+        function saveCart() {
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        }
+
+        function addToCart(productId) {
+            if (!currentUser) {
+                showNotification('Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng', true);
+                showModal('loginModal');
+                return;
+            }
+
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            const existingItem = cartItems.find(item => item.id === productId);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cartItems.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    image: product.image,
+                    quantity: 1
+                });
+            }
+
+            updateCartCount();
+            saveCart();
+            showNotification('Đã thêm sản phẩm vào giỏ hàng');
+        }
+
+        function addToCartFromModal() {
+            const quantity = parseInt(document.getElementById('productQuantity').value) || 1;
+            const productId = 1; // This would come from the modal data in a real app
+
+            if (!currentUser) {
+                showNotification('Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng', true);
+                showModal('loginModal');
+                closeModal('productDetailModal');
+                return;
+            }
+
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            const existingItem = cartItems.find(item => item.id === productId);
+            if (existingItem) {
+                existingItem.quantity += quantity;
+            } else {
+                cartItems.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    image: product.image,
+                    quantity: quantity
+                });
+            }
+
+            updateCartCount();
+            saveCart();
+            showNotification(`Đã thêm ${quantity} sản phẩm vào giỏ hàng`);
+            closeModal('productDetailModal');
+        }
+
+        function updateCartCount() {
+            const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
+            document.getElementById('cartCount').textContent = totalItems;
+        }
+
+        function showCart() {
+            if (!currentUser) {
+                showNotification('Vui lòng đăng nhập để xem giỏ hàng', true);
+                showModal('loginModal');
+                return;
+            }
+
+            const cartItemsContainer = document.getElementById('cartItemsContainer');
+            const cartTotalElement = document.getElementById('cartTotal');
+
+            if (cartItems.length === 0) {
+                cartItemsContainer.innerHTML = `
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Giỏ hàng của bạn đang trống</p>
+                    </div>
+                `;
+                cartTotalElement.textContent = '0 ₫';
+            } else {
+                cartItemsContainer.innerHTML = cartItems.map(item => `
+                    <div class="cart-item" data-id="${item.id}">
+                        <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+                        <div class="cart-item-info">
+                            <div class="cart-item-title">${item.name}</div>
+                            <div class="cart-item-price">${formatPrice(item.price)}</div>
+                            <div class="cart-item-quantity">
+                                <button onclick="updateCartItemQuantity(${item.id}, -1)">-</button>
+                                <input type="number" value="${item.quantity}" min="1" onchange="updateCartItemQuantity(${item.id}, 0, this.value)">
+                                <button onclick="updateCartItemQuantity(${item.id}, 1)">+</button>
+                            </div>
+                            <span class="remove-item" onclick="removeCartItem(${item.id})">Xóa</span>
+                        </div>
+                    </div>
+                `).join('');
+
+                const total = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                cartTotalElement.textContent = formatPrice(total);
+            }
+
+            showModal('cartModal');
+        }
+
+        function updateCartItemQuantity(productId, change, newQuantity = null) {
+            const item = cartItems.find(item => item.id === productId);
+            if (!item) return;
+
+            if (newQuantity !== null) {
+                item.quantity = parseInt(newQuantity) || 1;
+            } else {
+                item.quantity += change;
+                if (item.quantity < 1) item.quantity = 1;
+            }
+
+            saveCart();
+            showCart(); // Refresh cart display
+        }
+
+        function removeCartItem(productId) {
+            cartItems = cartItems.filter(item => item.id !== productId);
+            saveCart();
+            updateCartCount();
+            showCart(); // Refresh cart display
+            showNotification('Đã xóa sản phẩm khỏi giỏ hàng');
+        }
+
+        function checkout() {
+            if (cartItems.length === 0) {
+                showNotification('Giỏ hàng của bạn đang trống', true);
+                return;
+            }
+
+            showNotification('Chức năng thanh toán đang được phát triển');
+            closeModal('cartModal');
+        }
+
+        // Blog functions
+        function loadBlogPosts() {
+            // Mock blog data
+            const blogPosts = [{
+                title: '10 bước skincare cơ bản cho người mới bắt đầu',
+                date: '15/06/2023',
+                image: '10buoc.png',
+                excerpt: 'Hướng dẫn chi tiết quy trình chăm sóc da cơ bản dành cho người mới bắt đầu với skincare.'
+            }, {
+                title: 'Cách chọn kem chống nắng phù hợp với từng loại da',
+                date: '10/06/2023',
+                image: 'cachchon.png',
+                excerpt: 'Tìm hiểu cách lựa chọn kem chống nắng phù hợp với da dầu, da khô, da nhạy cảm và da mụn.'
+            }, {
+                title: 'Review top 5 serum vitamin C tốt nhất 2023',
+                date: '05/06/2023',
+                image: 'review.png',
+                excerpt: 'Đánh giá chi tiết 5 sản phẩm serum vitamin C được ưa chuộng nhất hiện nay.'
+            }];
+
+            // Render blog posts
+            const blogContainer = document.getElementById('blogPosts');
+            blogContainer.innerHTML = blogPosts.map(post => createBlogCard(post)).join('');
+        }
+
+        function createBlogCard(post) {
+            return `
+                <div class="blog-card" onclick="showBlogDetail('${post.title}')">
+                    <div class="blog-image">
+                        <img src="${post.image}" alt="${post.title}">
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-date">${post.date}</div>
+                        <div class="blog-title">${post.title}</div>
+                        <div class="blog-excerpt">${post.excerpt}</div>
+                        <a href="#" class="read-more">Đọc tiếp →</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        function showBlogDetail(title) {
+            showNotification(`Đang mở bài viết: ${title}`);
+        }
+
+        // Newsletter function
+        function setupNewsletterForm() {
+            const newsletterForm = document.getElementById('newsletterForm');
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const emailInput = this.querySelector('input[type="email"]');
+                if (!validateEmail(emailInput.value)) {
+                    showNotification('Vui lòng nhập email hợp lệ', true);
+                    return;
+                }
+                showNotification('Cảm ơn bạn đã đăng ký nhận tin từ BeautyGlow');
+                emailInput.value = '';
+            });
+        }
+
+        // Carousel functions
+        function startCarousel() {
+            setInterval(nextSlide, 5000);
+        }
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        function prevSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        // Helper functions
+        function formatPrice(price) {
+            return new Intl.NumberFormat('vi-VN', {
+                style: 'currency',
+                currency: 'VND'
+            }).format(price);
+        }
+    </script>
+</body>
+
+</html>
